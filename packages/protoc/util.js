@@ -182,6 +182,8 @@ module.exports.makeReleaseName = function makeReleaseName(params) {
                 build = 'linux-x86_64'
             } else if (params.arch === "x32") {
                 build = 'linux-x86_32'
+            } else if (params.arch === "arm64") {
+                build = 'linux-aarch_64'
             }
             break;
         case "win32":
